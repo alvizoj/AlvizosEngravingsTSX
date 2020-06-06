@@ -1,0 +1,173 @@
+/*
+---------------
+Containers
+---------------
+ */
+
+.html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body {
+    margin: 0px;
+    padding: 0px 0px 0px;
+    text-align: center;
+}
+
+.Site {
+    position: relative;
+    min-height: 100vh;
+    /* text-align: center;
+    min-height: 100%;
+    min-width: 100%;
+    padding-bottom: 2rem; */
+}
+
+.content-wrap {
+    text-align: center;
+    min-height: 100%;
+    min-width: 100%;
+    padding-bottom: 2rem;
+}
+
+/* Gallery: 1-column,2-row grid of photo and it's description */
+.Gallery {
+    display: grid;
+    max-width: 100%;
+    background-color: lightgray;
+    grid-template-rows: auto 1fr;
+    font-size: 20px;
+    /*border: 1px solid rgba(0, 0, 0, 0.8); */
+}
+
+.BusinessDescription {
+    background: turquoise;
+    padding: 5px;
+    font-size: large;
+    margin: 0;
+}
+
+/*
+---------------
+General Classes
+---------------
+ */
+
+.Header {
+    /* background-image: url("./resources/pattern.png"); */
+    background-repeat: repeat;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer {
+    background-color: lightslategrey; /* Footer Background Color*/
+    color: darkred; /* Footer Text Background Color*/
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0; /* Fixed footer @ bottom */
+    padding-bottom: 6px;
+    padding-top: 3px;
+}
+
+.GmailIcon {
+    width: 45px;
+    height: 42px;
+    position: relative;
+    padding-right: 5px;
+}
+
+/*
+Text Classes
+*/
+.HeaderTitleText {
+    font-size: 3em;
+    font-weight: 500;
+    background: linear-gradient(
+        #fceabb 0%,
+        #fccd4d 50%,
+        #fab500 51%,
+        #fbdf93 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Quicksand", sans-serif;
+}
+
+.HeaderDescText {
+    font-family: "ZCOOL KuaiLe", cursive;
+    font-size: 1.5em;
+    color: black;
+    margin: 0px;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+/*
+Responsive Images
+*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ResponsiveImage {
+    vertical-align: middle;
+    border-style: none;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.4);
+    margin-top: 4vw;
+    margin-bottom: 1rem;
+}
+
+/*
+-------------------------------
+MEDIA QUERIES for Mobile Devices
+-------------------------------
+*/
+@media only screen and (max-width: 500px) {
+    .HeaderTitleText {
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (max-width: 407px) {
+    .App-intro {
+        font-size: 4.6vw;
+        scroll-padding-inline-start: 3px;
+        scroll-padding-inline-end: 3px;
+    }
+
+    .HeaderDescText {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .Footer {
+        font-size: 4.7vw;
+        color: aqua;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .Gallery {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-rows: unset;
+    }
+}
+
+.mobileButton {
+    margin-bottom: 5px !important;
+}
