@@ -38,20 +38,14 @@ export default class HomeScreen extends React.Component<{
                 </div>
 
                 <main className="Gallery">
-                    <div>
-                        <img
-                            className="ResponsiveImage"
-                            src={
-                                "https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
-                            }
-                            alt="pic"
-                        />
-                        <h4>
-                            Engraving of AR-15. Price is $50 per 5 square inch
-                            engraving.
-                        </h4>
-                    </div>
-                    <ExtraImages></ExtraImages>
+                    <PicAndDescr></PicAndDescr>
+                    <PicAndDescr></PicAndDescr>
+                    <PicAndDescr></PicAndDescr>
+                    <PicAndDescr></PicAndDescr>
+                    <PicAndDescr></PicAndDescr>
+                    <PicAndDescr></PicAndDescr>
+                    <PicAndDescr></PicAndDescr>
+                    <h3>Hello Hello Hello</h3>
                 </main>
 
                 <footer className="Footer">
@@ -64,17 +58,17 @@ export default class HomeScreen extends React.Component<{
 
 function PicAndDescr() {
     return (
-        <h4>Engraving of AR-15. Price is $50 per 5 square inch engraving.</h4>
+        <div>
+            <img
+                className="ResponsiveImage"
+                src={
+                    "https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
+                }
+                alt="pic"
+            />
+            <h4>
+                Engraving of AR-15. Price is $50 per 5 square inch engraving.
+            </h4>
+        </div>
     );
-}
-
-class ExtraImages extends React.Component {
-    render() {
-        return (
-            <div>
-                <PicAndDescr></PicAndDescr>
-                <PicAndDescr></PicAndDescr>
-            </div>
-        );
-    }
 }
