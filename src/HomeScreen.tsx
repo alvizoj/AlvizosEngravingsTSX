@@ -47,12 +47,18 @@ export default class HomeScreen extends React.Component<{
                         Description="Engraving of an AR-15. TEST TEST TEST"
                         ImageSrc="https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
                     ></GalleryEntry>
-                    <button style={{ marginBottom: "10px" }}>
+                    <button
+                        style={{
+                            marginBottom: "10px",
+                            height: "2vw",
+                            minHeight: "2rem",
+                        }}
+                    >
                         See my Work
                     </button>
 
                     <section className="ContactInfo">
-                        <h2>Contact Information</h2>
+                        <h2 style={{ width: "100%" }}>Contact Information</h2>
                     </section>
                 </main>
 
