@@ -51,8 +51,8 @@ export default class HomeScreen extends React.Component<{
                         See my Work
                     </button>
 
-                    <section>
-                        <h2 className="ContactInfo">Contact Information</h2>
+                    <section className="ContactInfo">
+                        <h2>Contact Information</h2>
                     </section>
                 </main>
 
