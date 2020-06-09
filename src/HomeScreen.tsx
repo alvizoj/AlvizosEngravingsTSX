@@ -1,8 +1,10 @@
 import React from "react";
-import "./HomeScreen.css";
+import "./CSS/HomeScreen.css";
+import { GalleryEntry } from "./components/GalleryEntry";
 
 export default class HomeScreen extends React.Component<{
     HeaderTitleText: string;
+    HomeLocation: string;
 }> {
     componentDidMount() {
         document.title = "Alvizo's Engravings";
@@ -22,7 +24,7 @@ export default class HomeScreen extends React.Component<{
     // }
 
     render() {
-        let { HeaderTitleText } = this.props;
+        let { HeaderTitleText, HomeLocation } = this.props;
         return (
             <div className="Site">
                 <header className="Header">
@@ -33,19 +35,25 @@ export default class HomeScreen extends React.Component<{
                     <p className="HeaderDescText">
                         Metal Engraving Services<br></br>
                         DESCRIPTION OF BUSINESS<br></br>
-                        Based in Delano, CA
+                        {HomeLocation}
                     </p>
+                    <h1>{addNumbers(5, 5)}</h1>
                 </div>
 
-                <main className="Gallery">
-                    <PicAndDescr></PicAndDescr>
-                    <PicAndDescr></PicAndDescr>
-                    <PicAndDescr></PicAndDescr>
-                    <PicAndDescr></PicAndDescr>
-                    <PicAndDescr></PicAndDescr>
-                    <PicAndDescr></PicAndDescr>
-                    <PicAndDescr></PicAndDescr>
-                    <h3>Hello Hello Hello</h3>
+                <main>
+                    {/* <GalleryDesktop></GalleryDesktop>
+                    <GalleryMobile></GalleryMobile> */}
+                    <GalleryEntry
+                        Description="Engraving of an AR-15. TEST TEST TEST"
+                        ImageSrc="https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
+                    ></GalleryEntry>
+                    <button style={{ marginBottom: "10px" }}>
+                        See my Work
+                    </button>
+
+                    <section>
+                        <h2 className="ContactInfo">Contact Information</h2>
+                    </section>
                 </main>
 
                 <footer className="Footer">
@@ -56,19 +64,7 @@ export default class HomeScreen extends React.Component<{
     }
 }
 
-function PicAndDescr() {
-    return (
-        <div>
-            <img
-                className="ResponsiveImage"
-                src={
-                    "https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
-                }
-                alt="pic"
-            />
-            <h4>
-                Engraving of AR-15. Price is $50 per 5 square inch engraving.
-            </h4>
-        </div>
-    );
+export function addNumbers(a: number, b: number): string {
+    let total: number = a + b;
+    return total.toString();
 }
