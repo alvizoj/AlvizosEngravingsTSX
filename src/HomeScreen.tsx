@@ -10,21 +10,10 @@ export default class HomeScreen extends React.Component<{
         document.title = "Alvizo's Engravings";
     }
 
-    // constructor(props: HomeScreenProps) {
-    //     super(props);
-    // }
-
-    // toggleImages = () => {
-    //     const show = this.state;
-    //     this.props.show = !this.props.show;
-    //     if (this.props.buttonText === 'Show More')
-    //         this.setState({buttonText: 'Show Less'})
-    //     if (this.state.buttonText === 'Show Less')
-    //         this.setState({buttonText: 'Show More'})
-    // }
-
     render() {
+        // Member Variables
         let { HeaderTitleText, HomeLocation } = this.props;
+
         return (
             <div className="Site">
                 <header className="Header">
