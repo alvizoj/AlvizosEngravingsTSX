@@ -81,7 +81,6 @@ General Classes
 .Header {
     /* background-image: url("./resources/pattern.png"); */
     background-repeat: repeat;
-    height: 70px;
     align-items: center;
     justify-content: center;
     display: flex;

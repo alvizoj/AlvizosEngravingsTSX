@@ -1,0 +1,47 @@
+.Header {
+    /* background-image: url("./resources/pattern.png"); */
+    background-repeat: repeat;
+    /* height: 70px; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.HeaderTitleText {
+    font-size: 3em;
+    font-weight: 500;
+    background: linear-gradient(
+        #fceabb 0%,
+        #fccd4d 50%,
+        #fab500 51%,
+        #fbdf93 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Quicksand", sans-serif;
+}
+
+.HeaderDescText {
+    font-family: "ZCOOL KuaiLe", cursive;
+    font-size: 1.5em;
+    color: black;
+    margin: 0px;
+}
+
+/* 
+Media Queries
+*/
+
+@media only screen and (max-width: 500px) {
+    .HeaderTitleText {
+        font-size: 10vw;
+    }
+}
+
+@media only screen and (max-width: 407px) {
+    .HeaderDescText {
+        font-size: 5vw;
+    }
+}

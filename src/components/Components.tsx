@@ -1,6 +1,6 @@
 import React from "react";
-import "../HomeScreen.css";
 import { stringify } from "querystring";
+import { Link } from "react-router-dom";
 import { GalleryEntry } from "./GalleryEntry";
 
 export function GalleryDesktop() {
@@ -9,36 +9,41 @@ export function GalleryDesktop() {
     const defaultDesc: string =
         "Engraving of AR-15. Price is $50 per 5 square inch engraving.";
     return (
-        <div className="Gallery">
-            <GalleryEntry
-                Description={defaultImgSrc}
-                ImageSrc={defaultImgSrc}
-            ></GalleryEntry>
-            <GalleryEntry
-                Description={defaultImgSrc}
-                ImageSrc={defaultImgSrc}
-            ></GalleryEntry>
-            <GalleryEntry
-                Description={defaultImgSrc}
-                ImageSrc={defaultImgSrc}
-            ></GalleryEntry>
-            <GalleryEntry
-                Description={defaultImgSrc}
-                ImageSrc={defaultImgSrc}
-            ></GalleryEntry>
-            <GalleryEntry
-                Description={defaultImgSrc}
-                ImageSrc={defaultImgSrc}
-            ></GalleryEntry>
-            <GalleryEntry
-                Description={defaultImgSrc}
-                ImageSrc={defaultImgSrc}
-            ></GalleryEntry>
-            <GalleryEntry
-                Description={defaultImgSrc}
-                ImageSrc={defaultImgSrc}
-            ></GalleryEntry>
-        </div>
+        <>
+            <Link to="/home" className="whateverbruh">
+                Back
+            </Link>
+            <div className="Gallery">
+                <GalleryEntry
+                    Description={defaultImgSrc}
+                    ImageSrc={defaultImgSrc}
+                ></GalleryEntry>
+                <GalleryEntry
+                    Description={defaultImgSrc}
+                    ImageSrc={defaultImgSrc}
+                ></GalleryEntry>
+                <GalleryEntry
+                    Description={defaultImgSrc}
+                    ImageSrc={defaultImgSrc}
+                ></GalleryEntry>
+                <GalleryEntry
+                    Description={defaultImgSrc}
+                    ImageSrc={defaultImgSrc}
+                ></GalleryEntry>
+                <GalleryEntry
+                    Description={defaultImgSrc}
+                    ImageSrc={defaultImgSrc}
+                ></GalleryEntry>
+                <GalleryEntry
+                    Description={defaultImgSrc}
+                    ImageSrc={defaultImgSrc}
+                ></GalleryEntry>
+                <GalleryEntry
+                    Description={defaultImgSrc}
+                    ImageSrc={defaultImgSrc}
+                ></GalleryEntry>
+            </div>
+        </>
     );
 }
 
