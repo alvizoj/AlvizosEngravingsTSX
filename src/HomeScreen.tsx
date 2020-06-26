@@ -12,7 +12,7 @@ export default class HomeScreen extends React.Component<{}> {
         // Member Variables
 
         return (
-            <div className="Site">
+            <>
                 <div className="BusinessDescription">
                     <p className="HeaderDescText">
                         Metal Engraving Services<br></br>
@@ -37,11 +37,7 @@ export default class HomeScreen extends React.Component<{}> {
                         <h2 style={{ width: "100%" }}>Contact Information</h2>
                     </section>
                 </main>
-
-                <footer className="Footer">
-                    <b>{"\u00A9"} 2019 Joseph Alvizo. All rights reserved.</b>
-                </footer>
-            </div> /* Site Container */
+            </>
         );
     }
 }

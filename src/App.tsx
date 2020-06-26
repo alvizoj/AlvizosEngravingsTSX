@@ -2,8 +2,10 @@ import React from "react";
 import "./CSS/App.css";
 import HomeScreen from "./HomeScreen";
 import { AppHeader } from "./components/AppHeader";
+import { Footer } from "./components/Footer";
 import { GalleryDesktop } from "./components/Components";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import PageNotFound from "./components/PageNotFound";
 
 function App() {
     return (
@@ -11,15 +13,26 @@ function App() {
         - if navbar stays constant within entire app,
         put it inside router
         */
-        <BrowserRouter>
-            <AppHeader />
-            <Switch>
-                <Route component={HomeScreen} path="/home" />
+        <div className="Site">
+            <div className="ContentWrap">
+                <BrowserRouter>
+                    <AppHeader />
 
-                <Route component={GalleryDesktop} path="/gallery" />
-                <Redirect from="/" to="/home" />
-            </Switch>
-        </BrowserRouter>
+                    <Switch>
+                        <Route component={HomeScreen} exact path="/home" />
+                        <Route
+                            component={GalleryDesktop}
+                            exact
+                            path="/gallery"
+                        />
+                        <Route component={PageNotFound} />
+
+                        <Redirect from="" to="/home" />
+                    </Switch>
+                </BrowserRouter>
+            </div>
+            <Footer />
+        </div>
     );
 }
 

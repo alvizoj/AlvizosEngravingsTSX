@@ -1,0 +1,11 @@
+.Footer {
+    background-color: lightslategrey; /* Footer Background Color*/
+    color: darkred; /* Footer Text Background Color*/
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    bottom: 0; /* Fixed footer @ bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
