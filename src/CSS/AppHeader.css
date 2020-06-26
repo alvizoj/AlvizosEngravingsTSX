@@ -1,5 +1,6 @@
 .Header {
     /* background-image: url("./resources/pattern.png"); */
+    background-color: gray;
     background-repeat: repeat;
     /* height: 70px; */
     align-items: center;
