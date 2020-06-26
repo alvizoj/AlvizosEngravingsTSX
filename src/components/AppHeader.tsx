@@ -2,7 +2,7 @@ import React from "react";
 import "../CSS/AppHeader.css";
 import { Link } from "react-router-dom";
 
-export function AppHeader() {
+export default function AppHeader() {
     return (
         <header className="Header">
             <h1 className="HeaderTitleText">

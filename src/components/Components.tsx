@@ -1,9 +1,8 @@
 import React from "react";
-import { stringify } from "querystring";
 import { Link } from "react-router-dom";
 import { GalleryEntry } from "./GalleryEntry";
 
-export function GalleryDesktop() {
+export default function GalleryDesktop() {
     const defaultImgSrc: string =
         "https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png";
     const defaultDesc: string =
@@ -15,31 +14,31 @@ export function GalleryDesktop() {
             </Link>
             <div className="Gallery">
                 <GalleryEntry
-                    description={defaultImgSrc}
+                    description={defaultDesc}
                     imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    description={defaultImgSrc}
+                    description={defaultDesc}
                     imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    description={defaultImgSrc}
+                    description={defaultDesc}
                     imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    description={defaultImgSrc}
+                    description={defaultDesc}
                     imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    description={defaultImgSrc}
+                    description={defaultDesc}
                     imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    description={defaultImgSrc}
+                    description={defaultDesc}
                     imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    description={defaultImgSrc}
+                    description={defaultDesc}
                     imageSrc={defaultImgSrc}
                 ></GalleryEntry>
             </div>
