@@ -15,32 +15,32 @@ export function GalleryDesktop() {
             </Link>
             <div className="Gallery">
                 <GalleryEntry
-                    Description={defaultImgSrc}
-                    ImageSrc={defaultImgSrc}
+                    description={defaultImgSrc}
+                    imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    Description={defaultImgSrc}
-                    ImageSrc={defaultImgSrc}
+                    description={defaultImgSrc}
+                    imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    Description={defaultImgSrc}
-                    ImageSrc={defaultImgSrc}
+                    description={defaultImgSrc}
+                    imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    Description={defaultImgSrc}
-                    ImageSrc={defaultImgSrc}
+                    description={defaultImgSrc}
+                    imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    Description={defaultImgSrc}
-                    ImageSrc={defaultImgSrc}
+                    description={defaultImgSrc}
+                    imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    Description={defaultImgSrc}
-                    ImageSrc={defaultImgSrc}
+                    description={defaultImgSrc}
+                    imageSrc={defaultImgSrc}
                 ></GalleryEntry>
                 <GalleryEntry
-                    Description={defaultImgSrc}
-                    ImageSrc={defaultImgSrc}
+                    description={defaultImgSrc}
+                    imageSrc={defaultImgSrc}
                 ></GalleryEntry>
             </div>
         </>

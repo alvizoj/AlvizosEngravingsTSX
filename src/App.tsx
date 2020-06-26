@@ -17,7 +17,6 @@ function App() {
             <div className="ContentWrap">
                 <BrowserRouter>
                     <AppHeader />
-
                     <Switch>
                         <Route component={HomeScreen} exact path="/home" />
                         <Route
@@ -25,9 +24,8 @@ function App() {
                             exact
                             path="/gallery"
                         />
-                        <Route component={PageNotFound} />
-
-                        <Redirect from="" to="/home" />
+                        <Redirect exact from="/" to="/home" />
+                        <Route path="*" component={PageNotFound} />
                     </Switch>
                 </BrowserRouter>
             </div>

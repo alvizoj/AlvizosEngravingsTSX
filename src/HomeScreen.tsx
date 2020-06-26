@@ -26,8 +26,8 @@ export default class HomeScreen extends React.Component<{}> {
                     {/* <GalleryDesktop></GalleryDesktop>
                     <GalleryMobile></GalleryMobile> */}
                     <GalleryEntry
-                        Description="Engraving of an AR-15. TEST TEST TEST"
-                        ImageSrc="https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
+                        description="Engraving of an AR-15. TEST TEST TEST"
+                        imageSrc="https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
                     ></GalleryEntry>
                     <Link to="/gallery" className="whateverbruh">
                         See my Work

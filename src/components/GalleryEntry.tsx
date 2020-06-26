@@ -1,19 +1,33 @@
 import React from "react";
 
-export class GalleryEntry extends React.Component<{
-    ImageSrc: string;
-    Description: string;
-}> {
-    render() {
-        let { ImageSrc, Description } = this.props;
+// export class GalleryEntry extends React.Component<{
+//     ImageSrc: string;
+//     Description: string;
+// }> {
+//     render() {
+//         let { ImageSrc, Description } = this.props;
 
-        return (
-            <section /*className="GalleryEntry"*/>
-                <h4>{Description}</h4>
-                <img className="ResponsiveImage" src={ImageSrc} alt="pic" />
-            </section>
-        );
-    }
+//         return (
+//             <section /*className="GalleryEntry"*/>
+//                 <h4>{Description}</h4>
+//                 <img className="ResponsiveImage" src={ImageSrc} alt="pic" />
+//             </section>
+//         );
+//     }
+// }
+
+interface GalleryEntryProps {
+    imageSrc: string;
+    description: string;
+}
+export function GalleryEntry(props: GalleryEntryProps) {
+    let { imageSrc, description } = props;
+    return (
+        <section /*className="GalleryEntry"*/>
+            <h4>{description}</h4>
+            <img className="ResponsiveImage" src={imageSrc} alt="pic" />
+        </section>
+    );
 }
 
 export function PicAndDescr() {
