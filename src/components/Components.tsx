@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GalleryEntry } from "./GalleryEntry";
 
@@ -7,6 +7,10 @@ export default function GalleryDesktop() {
         "https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png";
     const defaultDesc: string =
         "Engraving of AR-15. Price is $50 per 5 square inch engraving.";
+
+    useEffect(() => {
+        document.title = "Gallery | Alvizo's Engravings";
+    });
     return (
         <>
             <Link to="/home" className="whateverbruh">
