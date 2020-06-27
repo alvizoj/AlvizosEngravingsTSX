@@ -9,6 +9,10 @@
     flex-direction: column;
 }
 
+.Header a {
+    text-decoration: none !important;
+}
+
 .HeaderTitleText {
     font-size: 3em;
     font-weight: 500;
