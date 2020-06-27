@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./CSS/HomeScreen.css";
 import { Link } from "react-router-dom";
-import { GalleryEntry } from "./components/GalleryEntry";
+import { GalleryEntry } from "./GalleryEntry";
 
 export default function HomeScreen() {
     useEffect(() => {

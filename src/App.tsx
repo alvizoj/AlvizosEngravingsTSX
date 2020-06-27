@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import "./CSS/App.css";
-import HomeScreen from "./HomeScreen";
+import HomeScreen from "./components/HomeScreen";
 import AppHeader from "./components/AppHeader";
 import Footer from "./components/Footer";
 import GalleryDesktop from "./components/Components";

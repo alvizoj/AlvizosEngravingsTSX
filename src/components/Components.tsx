@@ -13,7 +13,7 @@ export default function GalleryDesktop() {
     });
     return (
         <>
-            <Link to="/home" className="whateverbruh">
+            <Link to="/home" className="">
                 Back
             </Link>
             <div className="Gallery">
