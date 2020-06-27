@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import GalleryEntry from "./GalleryEntry";
+import StyledLink from "./StyledLink";
 
 export default function Gallery() {
     const defaultImgSrc: string =
@@ -13,13 +13,21 @@ export default function Gallery() {
     });
     return (
         <>
-            <Link
+            {/* <Link
                 to="/home"
                 className="Header"
                 style={{ paddingBottom: "1rem", color: "white" }}
             >
                 Back
-            </Link>
+            </Link> */}
+
+            <StyledLink
+                toPage="/home"
+                buttonText="Back"
+                stylePaddingBottom="1rem"
+                styleTextColor="white"
+            />
+
             <div className="Gallery">
                 <GalleryEntry
                     description={defaultDesc}
