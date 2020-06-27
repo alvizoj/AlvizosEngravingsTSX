@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import "./CSS/HomeScreen.css";
+import "../CSS/HomeScreen.css";
 import { Link } from "react-router-dom";
-import { GalleryEntry } from "./GalleryEntry";
+import GalleryEntry from "./GalleryEntry";
+import PageDescription from "./PageDescription";
 
 export default function HomeScreen() {
     useEffect(() => {
@@ -10,14 +11,15 @@ export default function HomeScreen() {
 
     return (
         <>
-            <div className="BusinessDescription">
+            {/* <div className="BusinessDescription">
                 <p className="HeaderDescText">
                     Metal Engraving Services<br></br>
                     DESCRIPTION OF BUSINESS<br></br>
                     Based in Delano, CA
                 </p>
                 <h1>{addNumbers(5, 5)}</h1>
-            </div>
+            </div> */}
+            {PageDescription("Home")}
 
             <main>
                 {/* <GalleryDesktop></GalleryDesktop>
