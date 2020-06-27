@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { GalleryEntry } from "./GalleryEntry";
+import GalleryEntry from "./GalleryEntry";
 
-export default function GalleryDesktop() {
+export default function Gallery() {
     const defaultImgSrc: string =
         "https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png";
     const defaultDesc: string =

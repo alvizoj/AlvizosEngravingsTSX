@@ -4,7 +4,7 @@ import "./CSS/App.css";
 import HomeScreen from "./components/HomeScreen";
 import AppHeader from "./components/AppHeader";
 import Footer from "./components/Footer";
-import GalleryDesktop from "./components/Components";
+import Gallery from "./components/Gallery";
 import PageNotFound from "./components/PageNotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -21,11 +21,7 @@ function App() {
                     <AppHeader />
                     <Switch>
                         <Route component={HomeScreen} exact path="/home" />
-                        <Route
-                            component={GalleryDesktop}
-                            exact
-                            path="/gallery"
-                        />
+                        <Route component={Gallery} exact path="/gallery" />
                         <Redirect exact from="/" to="/home" />
                         <Route path="*" component={PageNotFound} />
                     </Switch>
