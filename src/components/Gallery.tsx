@@ -13,7 +13,11 @@ export default function Gallery() {
     });
     return (
         <>
-            <Link to="/home" className="">
+            <Link
+                to="/home"
+                className="Header"
+                style={{ paddingBottom: "1rem", color: "white" }}
+            >
                 Back
             </Link>
             <div className="Gallery">
