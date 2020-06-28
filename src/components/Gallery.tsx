@@ -20,13 +20,15 @@ export default function Gallery() {
             >
                 Back
             </Link> */}
-
-            <StyledLink
-                toPage="/home"
-                buttonText="Back"
-                stylePaddingBottom="1rem"
-                styleTextColor="white"
-            />
+            <div className="Header">
+                <StyledLink
+                    toPage="/home"
+                    buttonText="Back"
+                    paddingBottom="1rem"
+                    textColor="white"
+                    backgroundColor="black"
+                />
+            </div>
 
             <div className="Gallery">
                 <GalleryEntry

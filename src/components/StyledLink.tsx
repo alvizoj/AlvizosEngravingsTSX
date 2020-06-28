@@ -1,23 +1,40 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../CSS/StyledLink.css";
+
+// Wrap component in div of whatever class I want link to be in
+// See: Gallery.tsx
 
 interface LinkProps {
     buttonText: string;
     toPage: string;
-    stylePaddingBottom: string;
-    styleTextColor: string;
+    paddingBottom: string;
+    textColor: string;
+    backgroundColor?: string;
 }
 
 export default function StyledLink(props: LinkProps) {
-    let { buttonText, toPage, stylePaddingBottom, styleTextColor } = props;
+    let {
+        buttonText,
+        toPage,
+        paddingBottom,
+        textColor,
+        backgroundColor,
+    } = props;
 
     return (
         <Link
             to={toPage}
-            className="Header"
-            style={{ paddingBottom: stylePaddingBottom, color: styleTextColor }}
+            style={{
+                paddingBottom: paddingBottom,
+            }}
         >
-            {buttonText}
+            <button
+                className="LinkButton"
+                style={{ color: textColor, backgroundColor: backgroundColor }}
+            >
+                {buttonText}
+            </button>
         </Link>
     );
 }
