@@ -9,8 +9,9 @@ interface LinkProps {
     buttonText: string;
     toPage: string;
     paddingBottom: string;
-    textColor: string;
+    textColor?: string;
     backgroundColor?: string;
+    fontSize?: string;
 }
 
 export default function StyledLink(props: LinkProps) {
@@ -20,18 +21,19 @@ export default function StyledLink(props: LinkProps) {
         paddingBottom,
         textColor,
         backgroundColor,
+        fontSize,
     } = props;
 
     return (
         <Link
             to={toPage}
             style={{
-                paddingBottom: paddingBottom,
+                paddingBottom,
             }}
         >
             <button
                 className="LinkButton"
-                style={{ color: textColor, backgroundColor: backgroundColor }}
+                style={{ color: textColor, backgroundColor, fontSize }}
             >
                 {buttonText}
             </button>

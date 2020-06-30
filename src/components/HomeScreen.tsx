@@ -11,14 +11,6 @@ export default function HomeScreen() {
 
     return (
         <>
-            {/* <div className="BusinessDescription">
-                <p className="HeaderDescText">
-                    Metal Engraving Services<br></br>
-                    DESCRIPTION OF BUSINESS<br></br>
-                    Based in Delano, CA
-                </p>
-                <h1>{addNumbers(5, 5)}</h1>
-            </div> */}
             {PageDescription("Home")}
 
             <main>
@@ -27,7 +19,7 @@ export default function HomeScreen() {
                 <GalleryEntry
                     description="Engraving of an AR-15. TEST TEST TEST"
                     imageSrc="https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
-                ></GalleryEntry>
+                />
                 <Link to="/gallery" className="">
                     See my Work
                 </Link>
