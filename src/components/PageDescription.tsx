@@ -10,7 +10,6 @@ export default function PageDescription(pageName: string) {
                 <br></br>
                 {PageDescriptions[pageName].pLine3}
             </p>
-            <h1>10</h1>
         </div>
     );
 }
@@ -26,8 +25,8 @@ Used to display PageDescription object on appropriate page based on key.
  */
 interface PD {
     pLine1: string;
-    pLine2: string;
-    pLine3: string;
+    pLine2?: string;
+    pLine3?: string;
     pLine4?: string;
     pLine5?: string;
 }
