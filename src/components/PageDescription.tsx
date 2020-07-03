@@ -1,4 +1,5 @@
 import React from "react";
+import "../CSS/HomeScreen.css";
 
 export default function PageDescription(pageName: string) {
     return (

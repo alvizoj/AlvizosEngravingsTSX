@@ -16,7 +16,7 @@ export default function PageNotFound() {
 
     return (
         <main>
-            <h1 style={{ fontSize: "10vw" }}>Whoops!</h1>
+            <h1 style={{ fontSize: "4vw" }}>Whoops!</h1>
 
             <img
                 className="ResponsiveImage"
@@ -26,7 +26,7 @@ export default function PageNotFound() {
                 alt="pic"
             />
 
-            <h1 style={{ fontSize: "5vw" }}>Sorry, this page doesn't exist.</h1>
+            <h3 style={{ fontSize: "3vw" }}>Sorry, this page doesn't exist.</h3>
             <br />
             <StyledLink
                 buttonText="Return Home"
