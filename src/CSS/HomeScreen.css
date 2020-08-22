@@ -57,7 +57,7 @@ body {
 }
 
 .BusinessDescription {
-    background: turquoise;
+    background: slateblue;
     padding: 5px;
     font-size: large;
     margin: 0;
@@ -108,7 +108,7 @@ Text Classes
 
 .ContactInfo {
     border-radius: 25px;
-    background: #73ad21;
+    background: darkslateblue;
     padding: 20px;
     width: 10%;
     margin: 2rem auto 2rem auto;

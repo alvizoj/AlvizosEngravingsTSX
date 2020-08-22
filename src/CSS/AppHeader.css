@@ -4,6 +4,7 @@
     background-repeat: repeat;
     /* height: 70px; */
     align-items: center;
+    font-size: calc(10px + 0.5vmin);
     justify-content: center;
     display: flex;
     flex-direction: column;
