@@ -20,7 +20,7 @@ export default function Gallery() {
                 style={{ paddingBottom: "1rem", color: "white" }}
             >
                 Back
-            </Link> */}
+            </Link> 
             <div className="Header">
                 <StyledLink
                     toPage="/home"
@@ -29,7 +29,7 @@ export default function Gallery() {
                     textColor="white"
                     backgroundColor="black"
                 />
-            </div>
+            </div> */}
 
             <div className="Gallery">
                 <GalleryEntry

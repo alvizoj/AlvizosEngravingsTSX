@@ -6,16 +6,29 @@
     align-items: center;
     font-size: calc(10px + 0.5vmin);
     justify-content: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
 }
 
 .Header a {
-    text-decoration: none !important;
+    text-decoration: none;
+}
+
+#homeButton {
+    grid-column: 10;
+}
+
+.activeButton {
+    text-decoration: overline !important;
+}
+
+#galleryButton {
+    grid-column: 11;
 }
 
 .HeaderTitleText {
-    font-size: 3em;
+    grid-column: 1 / span 5;
+    font-size: 250%;
     font-weight: 500;
     background: linear-gradient(
         #fceabb 0%,
@@ -42,7 +55,7 @@ Media Queries
 
 @media only screen and (max-width: 500px) {
     .HeaderTitleText {
-        font-size: 10vw;
+        font-size: 5.1vw;
     }
 }
 
