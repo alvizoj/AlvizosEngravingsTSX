@@ -10,20 +10,15 @@ export default function AppHeader() {
     //Use location.pathname for active buttons.
 
     function openHamburgerMenu() {
-        let x: HTMLElement = document.getElementById("myTopnav") as HTMLElement;
-        if (x.className === "topnav") {
-            x.className += " responsive";
+        let NavbarElement: HTMLElement = document.getElementById(
+            "myTopnav"
+        ) as HTMLElement;
+        if (NavbarElement.className === "topnav") {
+            NavbarElement.className += " responsive";
         } else {
-            x.className = "topnav";
+            NavbarElement.className = "topnav";
         }
     }
-
-    // function setActiveClass(): string {
-    //     let result: string;
-    //     if (path === "/home") {
-    //         result
-    //     }
-    // }
 
     return (
         <header className="topnav" id="myTopnav">
@@ -38,8 +33,8 @@ export default function AppHeader() {
                 >
                     Home
                 </Link>
+
                 <Link
-                    id="galleryButton"
                     to="/gallery"
                     className={path === "/gallery" ? "activeButton" : ""}
                 >
@@ -47,11 +42,7 @@ export default function AppHeader() {
                 </Link>
             </div>
 
-            <a
-                href="javascript:void(0);"
-                className="icon"
-                onClick={openHamburgerMenu}
-            >
+            <a className="icon" onClick={openHamburgerMenu}>
                 <i className="fa fa-bars"></i>
             </a>
         </header>

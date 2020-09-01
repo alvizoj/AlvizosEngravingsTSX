@@ -1,3 +1,26 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.Flex a:hover {
+    transform: scale(1.25);
+}
+
+.topnav .icon {
+    display: none;
+}
+
 .Header {
     /* background-image: url("./resources/pattern.png"); */
     overflow: hidden;
@@ -9,8 +32,9 @@
 }
 
 .activeButton {
+    text-decoration: overline !important;
     color: slateblue !important;
-    transform: scale(1.2);
+    transform: scale(1.25);
 }
 
 .Header a {
@@ -41,7 +65,6 @@
 /* 
 Media Queries
 */
-
 @media only screen and (max-width: 407px) {
     .HeaderDescText {
         font-size: 5vw;
@@ -67,8 +90,7 @@ Media Queries
     }
     .topnav.responsive a {
         float: none;
-        display: block;
-        text-align: left;
+        display: block !important;
     }
 
     #homeButton {
@@ -96,39 +118,9 @@ Media Queries
     .HeaderTitleText {
         font-size: 2rem;
     }
-    .Flex {
+    .topnav .Flex {
         position: absolute;
         right: 1%;
-        height: 100%;
-        top: 10%;
+        top: 0.5%;
     }
-}
-
-/* Navbar stuff */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.Flex a:hover {
-    transform: scale(1.2);
-}
-
-.topnav .icon {
-    display: none;
 }
