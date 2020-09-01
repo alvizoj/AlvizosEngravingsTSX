@@ -139,11 +139,6 @@ img {
 MEDIA QUERIES for Mobile Devices
 -------------------------------
 */
-@media only screen and (max-width: 500px) {
-    .HeaderTitleText {
-        font-size: 10vw;
-    }
-}
 
 @media only screen and (max-width: 407px) {
     .App-intro {
