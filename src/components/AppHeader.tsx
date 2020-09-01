@@ -1,9 +1,7 @@
 import React from "react";
 import "../CSS/AppHeader.css";
 import { Link } from "react-router-dom";
-import StyledLink from "./StyledLink";
 import { useLocation } from "react-router-dom";
-import { stringify } from "querystring";
 
 export default function AppHeader() {
     let path: string = useLocation().pathname;

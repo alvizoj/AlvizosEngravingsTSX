@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../CSS/HomeScreen.css";
-import PageDescription from "./PageDescription";
-import GalleryEntry from "./GalleryEntry";
 import StyledLink from "./StyledLink";
 
 function GiveDropboxImageLink(id: string): string {
