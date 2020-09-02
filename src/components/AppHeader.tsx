@@ -43,6 +43,9 @@ export default function AppHeader() {
             <a className="icon" onClick={openHamburgerMenu}>
                 <i className="fa fa-bars"></i>
             </a>
+            {/* <button className="icon" onClick={openHamburgerMenu}>
+                <i className="fa fa-bars"></i>
+            </button> */}
         </header>
     );
 }

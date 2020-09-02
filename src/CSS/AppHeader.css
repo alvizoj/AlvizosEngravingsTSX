@@ -55,13 +55,6 @@
     margin: 0 0 0 0;
 }
 
-.HeaderDescText {
-    font-family: "ZCOOL KuaiLe", cursive;
-    font-size: 1.5em;
-    color: black;
-    margin: 0px;
-}
-
 /* 
 Media Queries
 */
@@ -81,9 +74,13 @@ Media Queries
     .topnav a:not(:first-child) {
         display: none;
     }
+
     .topnav a.icon {
         float: right;
         display: block;
+        /* background-color: inherit;
+        border: none;
+        color: white; */
     }
     .topnav.responsive {
         position: relative;

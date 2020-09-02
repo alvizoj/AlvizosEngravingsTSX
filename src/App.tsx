@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import PageNotFound from "./components/PageNotFound";
 import ScrollToTop from "./components/ScrollToTop";
+import { HOME, GALLERY } from "./globals/Paths";
 
 function App() {
     return (
@@ -20,9 +21,9 @@ function App() {
                     <ScrollToTop />
                     <AppHeader />
                     <Switch>
-                        <Route component={HomeScreen} exact path="/home" />
-                        <Route component={Gallery} exact path="/gallery" />
-                        <Redirect exact from="/" to="/home" />
+                        <Route component={HomeScreen} exact path={HOME} />
+                        <Route component={Gallery} exact path={GALLERY} />
+                        <Redirect exact from="/" to={HOME} />
                         <Route path="*" component={PageNotFound} />
                     </Switch>
                 </BrowserRouter>
