@@ -9,7 +9,12 @@ export default function GalleryEntry(props: GalleryEntryProps) {
     return (
         <section /*className="GalleryEntry"*/>
             <h4>{description}</h4>
-            <img className="ResponsiveImage" src={imageSrc} alt="pic" />
+            <img
+                className="ResponsiveImage"
+                src={imageSrc}
+                alt="pic"
+                style={{ cursor: "pointer" }}
+            />
         </section>
     );
 }
