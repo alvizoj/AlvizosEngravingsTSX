@@ -17,31 +17,31 @@ export default function Gallery() {
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
             </div>
         </>
     );
