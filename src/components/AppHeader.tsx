@@ -23,7 +23,7 @@ export default function AppHeader() {
             <Link id="headerTitleText" to="/home">
                 <h1 className="HeaderTitleText">Alvizo's Engravings</h1>
             </Link>
-            <div className="Flex">
+            <nav className="Flex">
                 <Link
                     id="homeButton"
                     to="/home"
@@ -38,7 +38,7 @@ export default function AppHeader() {
                 >
                     Gallery
                 </Link>
-            </div>
+            </nav>
 
             <a className="icon" onClick={openHamburgerMenu}>
                 <i className="fa fa-bars"></i>

@@ -7,7 +7,6 @@
     float: left;
     display: block;
     color: #f2f2f2;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -64,13 +63,11 @@ Media Queries
     }
 }
 
-@media screen and (max-width: 800px) {
-    .topnav .Flex {
-        top: 0.2% !important;
-    }
-}
-
 @media screen and (max-width: 600px) {
+    .HeaderTitleText {
+        font-size: 5vw;
+    }
+
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -104,12 +101,6 @@ Media Queries
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .HeaderTitleText {
-        font-size: 5vw;
-    }
-}
-
 @media only screen and (max-width: 450px) {
     .HeaderTitleText {
         font-size: 6vw;
@@ -123,6 +114,7 @@ Media Queries
     .topnav .Flex {
         position: absolute;
         right: 1%;
-        top: 0.5%;
+        top: 0.5% !important;
+        text-align: center;
     }
 }
