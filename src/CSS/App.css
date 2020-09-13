@@ -2,9 +2,9 @@
     position: relative;
     min-height: 100vh;
     background-color: dimgray;
-    text-align: center;
 }
 
 .ContentWrap {
     padding-bottom: 2.5rem; /* Footer height */
+    text-align: center;
 }

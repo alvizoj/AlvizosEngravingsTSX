@@ -16,18 +16,18 @@ function App() {
         put it inside router
         */
         <div className="Site">
-            <div className="ContentWrap">
-                <BrowserRouter>
-                    <ScrollToTop />
-                    <AppHeader />
+            <BrowserRouter>
+                <ScrollToTop />
+                <AppHeader />
+                <div className="ContentWrap">
                     <Switch>
                         <Route component={HomeScreen} exact path={HOME} />
                         <Route component={Gallery} exact path={GALLERY} />
                         <Redirect exact from="/" to={HOME} />
                         <Route path="*" component={PageNotFound} />
                     </Switch>
-                </BrowserRouter>
-            </div>
+                </div>
+            </BrowserRouter>
             <Footer />
         </div>
     );
