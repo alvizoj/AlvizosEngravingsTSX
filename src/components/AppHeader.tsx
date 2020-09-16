@@ -1,48 +1,50 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../CSS/AppHeader.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import HamburgerIcon from "./HamburgerIcon";
+import { HOME, GALLERY } from "../globals/Paths";
 
 export default function AppHeader() {
     let path: string = useLocation().pathname;
     //Use location.pathname for active buttons.
+    const headerRef = useRef<HTMLDivElement>(null);
 
-    function openHamburgerMenu() {
-        let NavbarElement: HTMLElement = document.getElementById(
-            "myTopnav"
-        ) as HTMLElement;
-        if (NavbarElement.className === "topnav") {
-            NavbarElement.className += " responsive";
+    function expandResponsiveNavbar(isExpanded: boolean) {
+        if (isExpanded) {
+            if (headerRef.current !== null) {
+                headerRef.current.className = "topnav responsive";
+            }
         } else {
-            NavbarElement.className = "topnav";
+            if (headerRef.current !== null) {
+                headerRef.current.className = "topnav";
+            }
         }
     }
 
     return (
-        <header className="topnav" id="myTopnav">
-            <Link id="headerTitleText" to="/home">
+        <header ref={headerRef} className="topnav">
+            <Link id="headerTitleText" to={HOME}>
                 <h1 className="HeaderTitleText">Alvizo's Engravings</h1>
             </Link>
             <nav className="Flex">
                 <Link
                     id="homeButton"
-                    to="/home"
-                    className={path === "/home" ? "activeButton" : ""}
+                    to={HOME}
+                    className={path === HOME ? "activeButton" : ""}
                 >
                     Home
                 </Link>
 
                 <Link
-                    to="/gallery"
-                    className={path === "/gallery" ? "activeButton" : ""}
+                    to={GALLERY}
+                    className={path === GALLERY ? "activeButton" : ""}
                 >
                     Gallery
                 </Link>
+                <HamburgerIcon expandedChanged={expandResponsiveNavbar} />
             </nav>
 
-            <a className="icon" onClick={openHamburgerMenu}>
-                <i className="fa fa-bars"></i>
-            </a>
             {/* <button className="icon" onClick={openHamburgerMenu}>
                 <i className="fa fa-bars"></i>
             </button> */}

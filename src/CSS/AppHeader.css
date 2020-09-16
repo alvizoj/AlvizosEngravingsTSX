@@ -40,6 +40,10 @@
     text-decoration: none;
 }
 
+#headerTitleText {
+    float: left !important;
+}
+
 .HeaderTitleText {
     background: linear-gradient(
         #fceabb 0%,
@@ -81,6 +85,7 @@ Media Queries
     }
     .topnav.responsive {
         position: relative;
+        text-align: center;
     }
     .topnav.responsive .icon {
         position: absolute;
