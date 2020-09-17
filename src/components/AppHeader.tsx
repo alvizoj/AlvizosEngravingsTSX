@@ -14,10 +14,12 @@ export default function AppHeader() {
         if (isExpanded) {
             if (headerRef.current !== null) {
                 headerRef.current.className = "topnav responsive";
+                console.log("if: " + headerRef.current.className);
             }
         } else {
             if (headerRef.current !== null) {
                 headerRef.current.className = "topnav";
+                console.log("else: " + headerRef.current.className);
             }
         }
     }
