@@ -29,6 +29,7 @@ export default function AppHeader() {
             <Link id="headerTitleText" to={HOME}>
                 <h1 className="HeaderTitleText">Alvizo's Engravings</h1>
             </Link>
+
             <nav className="Flex">
                 <Link
                     id="homeButton"
@@ -46,10 +47,6 @@ export default function AppHeader() {
                 </Link>
                 <HamburgerIcon expandedChanged={expandResponsiveNavbar} />
             </nav>
-
-            {/* <button className="icon" onClick={openHamburgerMenu}>
-                <i className="fa fa-bars"></i>
-            </button> */}
         </header>
     );
 }
