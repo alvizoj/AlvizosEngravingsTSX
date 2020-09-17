@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import "../CSS/App.css";
+import "react-image-lightbox/style.css";
 import HomeScreen from "./HomeScreen";
 import AppHeader from "./AppHeader";
 import Footer from "./Footer";
