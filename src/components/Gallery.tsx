@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Lightbox from "react-image-lightbox";
 import GalleryEntry from "./GalleryEntry";
 
 export default function Gallery() {
@@ -42,6 +43,7 @@ export default function Gallery() {
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
                 />
+                {/* <Lightbox mainSrc={defaultImgSrc} onCloseRequest={() => {}} /> */}
             </div>
         </>
     );
