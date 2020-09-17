@@ -14,7 +14,7 @@ export default function Gallery() {
 
     return (
         <>
-            <div className="Gallery">
+            <main className="Gallery">
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
@@ -44,7 +44,7 @@ export default function Gallery() {
                     imageSrc={defaultImgSrc}
                 />
                 {/* <Lightbox mainSrc={defaultImgSrc} onCloseRequest={() => {}} /> */}
-            </div>
+            </main>
         </>
     );
 }
