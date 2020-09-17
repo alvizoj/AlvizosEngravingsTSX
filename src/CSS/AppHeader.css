@@ -83,10 +83,16 @@ Media Queries
         border: none;
         color: white; */
     }
+
     .topnav.responsive {
         position: relative;
+        display: grid;
+    }
+
+    .topnav .Flex {
         text-align: center;
     }
+
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
