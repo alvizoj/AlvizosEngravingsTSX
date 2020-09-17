@@ -7,7 +7,7 @@ interface GalleryEntryProps {
 export default function GalleryEntry(props: GalleryEntryProps) {
     let { imageSrc, description } = props;
     return (
-        <section /*className="GalleryEntry"*/>
+        <section>
             <h4>{description}</h4>
             <img
                 className="ResponsiveImage"
