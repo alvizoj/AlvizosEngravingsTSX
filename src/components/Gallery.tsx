@@ -48,12 +48,3 @@ export default function Gallery() {
         </>
     );
 }
-
-export function GalleryMobile() {
-    return (
-        <div className="Gallery" style={{}}>
-            <button className="Button_Gallery">Show Gallery</button>
-            <h3>Hello Hello Hello</h3>
-        </div>
-    );
-}

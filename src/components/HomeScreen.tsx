@@ -15,8 +15,6 @@ export default function HomeScreen() {
             {PageDescription("Home")}
 
             <main>
-                {/* <GalleryDesktop></GalleryDesktop>
-                    <GalleryMobile></GalleryMobile> */}
                 <GalleryEntry
                     description="Engraving of an AR-15. TEST TEST TEST"
                     imageSrc="https://www.atomicengraving.com/wp-content/uploads/2017/08/homemade80.png"
@@ -43,9 +41,4 @@ export default function HomeScreen() {
             </main>
         </>
     );
-}
-
-export function addNumbers(a: number, b: number): string {
-    let total: number = a + b;
-    return total.toString();
 }

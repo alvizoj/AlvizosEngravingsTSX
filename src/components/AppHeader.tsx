@@ -6,8 +6,9 @@ import HamburgerIcon from "./HamburgerIcon";
 import { HOME, GALLERY } from "../globals/Paths";
 
 export default function AppHeader() {
-    let path: string = useLocation().pathname;
     //Use location.pathname for active buttons.
+    let path: string = useLocation().pathname;
+
     const headerRef = useRef<HTMLDivElement>(null);
 
     function expandResponsiveNavbar(isExpanded: boolean) {
