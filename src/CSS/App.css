@@ -1,10 +1,21 @@
+/*
+Global CSS settings should be defined here
+*/
+
 .Site {
-    /* position: relative; */
     min-height: 100vh;
-    background-color: dimgray;
 }
 
 .ContentWrap {
     padding-bottom: 2.5rem; /* Footer height */
     text-align: center;
+}
+
+main {
+    padding-top: 20px;
+    background-color: dimgray;
+}
+
+h4 {
+    margin: 0;
 }
