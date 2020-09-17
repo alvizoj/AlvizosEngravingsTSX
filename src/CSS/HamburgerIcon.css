@@ -32,6 +32,12 @@
     transform: rotate(45deg) translate(-8px, -8px);
 }
 
+@media only screen and (max-width: 350px) {
+    .IconContainer {
+        top: 0.25% !important;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .IconContainer {
         display: none !important;
