@@ -3,9 +3,10 @@ import React from "react";
 interface GalleryEntryProps {
     imageSrc: string;
     description: string;
+    onClick?: () => {};
 }
 export default function GalleryEntry(props: GalleryEntryProps) {
-    let { imageSrc, description } = props;
+    let { imageSrc, description, onClick } = props;
     return (
         <section>
             <h4>{description}</h4>
@@ -14,6 +15,7 @@ export default function GalleryEntry(props: GalleryEntryProps) {
                 src={imageSrc}
                 alt="pic"
                 style={{ cursor: "pointer" }}
+                onClick={onClick}
             />
         </section>
     );
