@@ -67,7 +67,7 @@ Media Queries
     }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .HeaderTitleText {
         font-size: 5vw;
     }
