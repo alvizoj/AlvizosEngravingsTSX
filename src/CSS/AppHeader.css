@@ -1,21 +1,50 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.Flex a:hover {
+    transform: scale(1.25);
+}
+
+.topnav .icon {
+    display: none;
+}
+
 .Header {
     /* background-image: url("./resources/pattern.png"); */
+    overflow: hidden;
     background-color: rgb(68, 68, 68);
     background-repeat: repeat;
     /* height: 70px; */
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
+}
+
+.activeButton {
+    text-decoration: overline !important;
+    color: slateblue !important;
+    transform: scale(1.25);
 }
 
 .Header a {
-    text-decoration: none !important;
+    text-decoration: none;
+}
+
+#headerTitleText {
+    float: left !important;
 }
 
 .HeaderTitleText {
-    font-size: 3em;
-    font-weight: 500;
     background: linear-gradient(
         #fceabb 0%,
         #fccd4d 50%,
@@ -26,27 +55,77 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Quicksand", sans-serif;
-}
-
-.HeaderDescText {
-    font-family: "ZCOOL KuaiLe", cursive;
-    font-size: 1.5em;
-    color: black;
-    margin: 0px;
+    margin: 0 0 0 0;
 }
 
 /* 
 Media Queries
 */
-
-@media only screen and (max-width: 500px) {
-    .HeaderTitleText {
-        font-size: 10vw;
-    }
-}
-
 @media only screen and (max-width: 407px) {
     .HeaderDescText {
         font-size: 5vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .HeaderTitleText {
+        font-size: 5vw;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        /* background-color: inherit;
+        border: none;
+        color: white; */
+    }
+
+    .topnav.responsive {
+        position: relative;
+        display: grid;
+    }
+
+    .topnav .Flex {
+        text-align: center;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block !important;
+    }
+
+    #homeButton {
+        display: none;
+    }
+
+    #galleryButton {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .HeaderTitleText {
+        font-size: 6vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .HeaderTitleText {
+        font-size: 2rem;
+    }
+    .topnav .Flex {
+        position: absolute;
+        right: 1%;
+        top: 0.5% !important;
+        text-align: center;
     }
 }

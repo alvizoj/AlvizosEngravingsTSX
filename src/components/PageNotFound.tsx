@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../CSS/HomeScreen.css";
-import PageDescription from "./PageDescription";
-import GalleryEntry from "./GalleryEntry";
 import StyledLink from "./StyledLink";
 
 function GiveDropboxImageLink(id: string): string {
@@ -16,17 +14,21 @@ export default function PageNotFound() {
 
     return (
         <main>
-            <h1 style={{ fontSize: "10vw" }}>Whoops!</h1>
+            <h1 style={{ fontSize: "4vw" }}>
+                Whoops! Pet the doggo to return Home
+            </h1>
 
-            <img
-                className="ResponsiveImage"
-                src={GiveDropboxImageLink(
-                    "5ctzsnl05uxjpmn/20141026_091534.jpg"
-                )}
-                alt="pic"
-            />
+            <Link to="/home">
+                <img
+                    className="ResponsiveImage"
+                    src={GiveDropboxImageLink(
+                        "5ctzsnl05uxjpmn/20141026_091534.jpg"
+                    )}
+                    alt="pic"
+                />
+            </Link>
 
-            <h1 style={{ fontSize: "5vw" }}>Sorry, this page doesn't exist.</h1>
+            <h3 style={{ fontSize: "3vw" }}>Sorry, this page doesn't exist.</h3>
             <br />
             <StyledLink
                 buttonText="Return Home"

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
+import Lightbox from "react-image-lightbox";
 import GalleryEntry from "./GalleryEntry";
-import StyledLink from "./StyledLink";
 
 export default function Gallery() {
     const defaultImgSrc: string =
@@ -14,62 +14,37 @@ export default function Gallery() {
 
     return (
         <>
-            {/* <Link
-                to="/home"
-                className="Header"
-                style={{ paddingBottom: "1rem", color: "white" }}
-            >
-                Back
-            </Link> */}
-            <div className="Header">
-                <StyledLink
-                    toPage="/home"
-                    buttonText="Back"
-                    paddingBottom="1rem"
-                    textColor="white"
-                    backgroundColor="black"
+            <main className="Gallery">
+                <GalleryEntry
+                    description={defaultDesc}
+                    imageSrc={defaultImgSrc}
                 />
-            </div>
-
-            <div className="Gallery">
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
+                />
                 <GalleryEntry
                     description={defaultDesc}
                     imageSrc={defaultImgSrc}
-                ></GalleryEntry>
-                <GalleryEntry
-                    description={defaultDesc}
-                    imageSrc={defaultImgSrc}
-                ></GalleryEntry>
-            </div>
+                />
+                {/* <Lightbox mainSrc={defaultImgSrc} onCloseRequest={() => {}} /> */}
+            </main>
         </>
-    );
-}
-
-export function GalleryMobile() {
-    return (
-        <div className="Gallery" style={{}}>
-            <button className="Button_Gallery">Show Gallery</button>
-            <h3>Hello Hello Hello</h3>
-        </div>
     );
 }
