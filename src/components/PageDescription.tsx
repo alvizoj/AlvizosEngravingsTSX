@@ -16,11 +16,11 @@ export default function PageDescription(pageName: string) {
 }
 
 /*
---- PageDescriptions dicitonary ---
+--- PageDescriptions dictionary ---
 
 Used to display PageDescription object on appropriate page based on key.
  - ID is a homepage string
- - Key is PD interface 
+ - Key is PD interface
      - PD interface = varying # of strings populating HeaderDescText paragraph class
 
  */

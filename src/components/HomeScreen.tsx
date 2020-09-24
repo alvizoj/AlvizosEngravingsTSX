@@ -6,6 +6,7 @@ import PageDescription from "./PageDescription";
 import StyledLink from "./StyledLink";
 
 export default function HomeScreen() {
+    //Page title
     useEffect(() => {
         document.title = "Alvizo's Engravings";
     });

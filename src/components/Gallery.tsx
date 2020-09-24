@@ -13,38 +13,15 @@ export default function Gallery() {
     });
 
     return (
-        <>
-            <main className="Gallery">
-                <GalleryEntry
-                    description={defaultDesc}
-                    imageSrc={defaultImgSrc}
-                />
-                <GalleryEntry
-                    description={defaultDesc}
-                    imageSrc={defaultImgSrc}
-                />
-                <GalleryEntry
-                    description={defaultDesc}
-                    imageSrc={defaultImgSrc}
-                />
-                <GalleryEntry
-                    description={defaultDesc}
-                    imageSrc={defaultImgSrc}
-                />
-                <GalleryEntry
-                    description={defaultDesc}
-                    imageSrc={defaultImgSrc}
-                />
-                <GalleryEntry
-                    description={defaultDesc}
-                    imageSrc={defaultImgSrc}
-                />
-                <GalleryEntry
-                    description={defaultDesc}
-                    imageSrc={defaultImgSrc}
-                />
-                {/* <Lightbox mainSrc={defaultImgSrc} onCloseRequest={() => {}} /> */}
-            </main>
-        </>
+        <main className="Gallery">
+            <GalleryEntry description={defaultDesc} imageSrc={defaultImgSrc} />
+            <GalleryEntry description={defaultDesc} imageSrc={defaultImgSrc} />
+            <GalleryEntry description={defaultDesc} imageSrc={defaultImgSrc} />
+            <GalleryEntry description={defaultDesc} imageSrc={defaultImgSrc} />
+            <GalleryEntry description={defaultDesc} imageSrc={defaultImgSrc} />
+            <GalleryEntry description={defaultDesc} imageSrc={defaultImgSrc} />
+            <GalleryEntry description={defaultDesc} imageSrc={defaultImgSrc} />
+            {/* <Lightbox mainSrc={defaultImgSrc} onCloseRequest={() => {}} /> */}
+        </main>
     );
 }
