@@ -20,15 +20,6 @@
     display: none;
 }
 
-.Header {
-    /* background-image: url("./resources/pattern.png"); */
-    overflow: hidden;
-    background-color: rgb(68, 68, 68);
-    background-repeat: repeat;
-    /* height: 70px; */
-    align-items: center;
-    justify-content: center;
-}
 
 .activeButton {
     text-decoration: overline !important;
@@ -51,14 +42,13 @@
         #fab500 51%,
         #fbdf93 100%
     );
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Quicksand", sans-serif;
     margin: 0 0 0 0;
 }
 
-/* 
+/*
 Media Queries
 */
 @media only screen and (max-width: 407px) {
@@ -122,10 +112,23 @@ Media Queries
     .HeaderTitleText {
         font-size: 2rem;
     }
+
+    .topnav {
+        display: flex;
+        align-items: center;
+    }
+
     .topnav .Flex {
         position: absolute;
         right: 1%;
-        top: 0.5% !important;
-        text-align: center;
+    }
+
+    .activeButton {
+        position: relative;
+        top: -0.09vw;
+    }
+    .Flex a:hover {
+        position: relative;
+        top: -0.09vw;
     }
 }
