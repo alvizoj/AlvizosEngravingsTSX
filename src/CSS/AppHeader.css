@@ -59,7 +59,7 @@ Media Queries
 
 @media only screen and (max-width: 600px) {
     .HeaderTitleText {
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     .topnav a:not(:first-child) {
@@ -91,7 +91,6 @@ Media Queries
     .topnav.responsive a {
         float: none;
         display: block !important;
-        font-size: 6vw;
     }
 
     #homeButton {
@@ -100,6 +99,12 @@ Media Queries
 
     #galleryButton {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .HeaderTitleText {
+        font-size: 6vw;
     }
 }
 
