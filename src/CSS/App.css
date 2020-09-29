@@ -5,6 +5,7 @@ Global CSS settings should be defined here
 .Site {
     min-height: 100vh;
     position: relative;
+    background-color: dimgray;
 }
 
 .ContentWrap {
@@ -15,5 +16,4 @@ Global CSS settings should be defined here
 main {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: dimgray;
 }
