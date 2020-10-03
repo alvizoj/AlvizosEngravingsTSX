@@ -12,6 +12,7 @@ interface LinkProps {
     textColor?: string;
     backgroundColor?: string;
     fontSize?: string;
+    borderColor?: string;
 }
 
 export default function StyledLink(props: LinkProps) {
@@ -22,6 +23,7 @@ export default function StyledLink(props: LinkProps) {
         textColor,
         backgroundColor,
         fontSize,
+        borderColor,
     } = props;
 
     return (
@@ -33,7 +35,12 @@ export default function StyledLink(props: LinkProps) {
         >
             <button
                 className="LinkButton"
-                style={{ color: textColor, backgroundColor, fontSize }}
+                style={{
+                    color: textColor,
+                    backgroundColor,
+                    fontSize,
+                    borderColor,
+                }}
             >
                 {buttonText}
             </button>
