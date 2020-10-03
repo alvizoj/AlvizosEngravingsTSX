@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../CSS/HomeScreen.css";
 import StyledLink from "./StyledLink";
-import { ReactComponent as AlertIcon } from "../resources/alert-circle-outline.svg";
-import Yee from "../resources/Yee.svg";
 import "../CSS/PageNotFound.css";
+import { DIMGRAY, JET, BLACK, DARKSLATEBLUE } from "../globals/HexColors";
 
 export default function PageNotFound() {
     useEffect(() => {
@@ -16,17 +15,11 @@ export default function PageNotFound() {
             {/*<h1 style={{ fontSize: "4vw" }}>*/}
             {/*    Whoops! Pet the doggo to return Home*/}
             {/*</h1>*/}
-            <img className="ErrorLogo" src={require("../resources/Yee.svg")} />
-
-            {/*<Link to="/home">*/}
-            {/*    <img*/}
-            {/*        className="ResponsiveImage"*/}
-            {/*        src={GiveDropboxImageLink(*/}
-            {/*            "5ctzsnl05uxjpmn/20141026_091534.jpg"*/}
-            {/*        )}*/}
-            {/*        alt="pic"*/}
-            {/*    />*/}
-            {/*</Link>*/}
+            <img
+                className="ErrorLogo"
+                src={require("../resources/CloudErrorIcon.svg")}
+                alt="Error Icon"
+            />
 
             <h3 className="NotFoundText">Sorry, this page doesn't exist.</h3>
             <br />
@@ -34,9 +27,10 @@ export default function PageNotFound() {
                 buttonText="Return Home"
                 toPage="/home"
                 paddingBottom="1rem"
-                backgroundColor="blue"
-                textColor="gray"
-                fontSize="3vw"
+                backgroundColor={DARKSLATEBLUE}
+                textColor={BLACK}
+                fontSize="2rem"
+                borderColor={DARKSLATEBLUE}
             />
             <h2 className="SecondaryText">
                 Alternatively, you can also view my
