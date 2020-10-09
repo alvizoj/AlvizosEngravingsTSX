@@ -41,7 +41,6 @@ Containers
 }
 
 .BusinessDescription {
-    background: slateblue;
     padding: 5px;
     font-size: large;
     margin: 0;
@@ -89,6 +88,8 @@ Text Classes
     font-size: 1.5em;
     color: black;
     margin: 0px;
+    position: relative;
+    text-align: center;
 }
 
 .ContactInfo {
@@ -104,19 +105,7 @@ Text Classes
 Responsive Images
 */
 img {
-    max-width: 95%;
-    height: auto;
-}
-
-.ResponsiveImage {
-    max-width: 95%;
-    height: auto;
-    vertical-align: middle;
-    border-style: none;
-    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.4);
-    margin-top: 4vw;
-    margin-bottom: 1rem;
-    /* filter: opacity(200%); */
+    width: 95%;
 }
 
 /*
@@ -143,6 +132,39 @@ MEDIA QUERIES for Mobile Devices
         color: aqua;
     }
 }
+/*
+---------------
+HomeScreen Image
+---------------
+ */
+
+.ResponsiveImage {
+    max-width: 95%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.4);
+    margin-top: 4vw;
+    margin-bottom: 1rem;
+    /* filter: opacity(200%); */
+}
+
+.HomeScreenImage {
+    background-image: url("https://www.dropbox.com/s/iezatu4wv1vi0g3/marian-kroell-TnKhA0EGg00-unsplash.jpg?raw=1");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 99%;
+
+}
+
+.HomeScreenText {
+    text-align: center;
+}
+
 
 /* min-width: 1000px BEFORE */
 @media only screen and (min-width: 700px) {
