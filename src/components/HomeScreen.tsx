@@ -17,12 +17,18 @@ export default function HomeScreen() {
 
     const windowSize = useWindowSize();
 
+    function setImageHeight(): number | undefined {
+        if (windowSize.height) {
+            return (windowSize.height - 65) as number;
+        }
+    }
+
     return (
         <>
             {/*{PageDescription("Home")}*/}
             <div
                 className="HomeScreenImage"
-                style={{ height: windowSize.height, width: windowSize.width }}
+                style={{ height: setImageHeight(), width: windowSize.width}}
             >
                 <div className="HomeScreenText">
                     <p className="HeaderDescText">
