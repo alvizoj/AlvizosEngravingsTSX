@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../CSS/HomeScreen.css";
 import StyledLink from "./StyledLink";
 import "../CSS/PageNotFound.css";
-import { DIMGRAY, JET, BLACK, DARKSLATEBLUE } from "../globals/HexColors";
+import { /*DIMGRAY, JET, */ BLACK, DARKSLATEBLUE } from "../globals/HexColors";
 
 export default function PageNotFound() {
     useEffect(() => {

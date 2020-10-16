@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Lightbox from "react-image-lightbox";
 import GalleryEntry from "./GalleryEntry";
 
 export default function Gallery() {
