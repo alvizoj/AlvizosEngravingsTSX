@@ -1,6 +1,9 @@
 .topnav {
     overflow: hidden;
+    display: flex;
+    align-items: center;
     background-color: #333;
+    min-height: 65px;
 }
 
 .topnav a {
@@ -36,10 +39,10 @@
 
 .HeaderTitleText {
     background: linear-gradient(
-            #fceabb 0%,
-            #fccd4d 50%,
-            #fab500 51%,
-            #fbdf93 100%
+        #fceabb 0%,
+        #fccd4d 50%,
+        #fab500 51%,
+        #fbdf93 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
