@@ -3,7 +3,6 @@
     cursor: pointer;
     position: absolute;
     right: 1%;
-    top: 0.25% !important;
     border: 0;
     background: none;
     outline: none;
@@ -35,13 +34,17 @@
 
 @media only screen and (max-width: 300px) {
     .IconContainer.expanded {
-        top: 1.5% !important;
+        top: 4% !important;
+    }
+
+    .IconContainer {
+        top: 0.75% !important;
     }
 }
 
 @media only screen and (min-width: 300px) and (max-width: 350px) {
     .IconContainer {
-        top: 0.5% !important;
+        top: 0.75% !important;
     }
 
     .IconContainer.expanded {
