@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     background-color: #333;
-    min-height: 65px;
 }
 
 .topnav a {
@@ -38,6 +37,7 @@
 }
 
 .HeaderTitleText {
+    font-size: 2rem;
     background: linear-gradient(
         #fceabb 0%,
         #fccd4d 50%,
@@ -53,6 +53,7 @@
 /*
 Media Queries
 */
+
 @media only screen and (max-width: 407px) {
     .HeaderDescText {
         font-size: 5vw;
@@ -116,10 +117,6 @@ Media Queries
         font-size: 2rem;
     }
 
-    .topnav {
-        display: flex;
-        align-items: center;
-    }
 
     .topnav .Flex {
         position: absolute;

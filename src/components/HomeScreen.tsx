@@ -28,7 +28,7 @@ export default function HomeScreen() {
             {/*{PageDescription("Home")}*/}
             <div
                 className="HomeScreenImage"
-                style={{ height: setImageHeight(), width: windowSize.width}}
+                style={{ height: setImageHeight() }}
             >
                 <div className="HomeScreenText">
                     <p className="HeaderDescText">
