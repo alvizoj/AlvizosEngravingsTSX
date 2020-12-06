@@ -6,8 +6,7 @@ import "../CSS/HomeScreen.css";
 // import StyledLink from "./StyledLink";
 // import { DARKSLATEBLUE } from "../globals/HexColors";
 // import { DropboxEngravingPhoto } from "../globals/Paths";
-import { useWindowSize } from "../hooks/WindowSize";
-import PageDescription from "./PageDescription";
+// import PageDescription from "./PageDescription";
 
 export default function HomeScreen() {
     //Page title
@@ -15,27 +14,15 @@ export default function HomeScreen() {
         document.title = "Alvizo's Engravings";
     });
 
-    const windowSize = useWindowSize();
-
-    function setImageHeight(): number | undefined {
-        if (windowSize.height) {
-            return (windowSize.height - 65) as number;
-        }
-    }
-
     return (
         <>
-            {/*{PageDescription("Home")}*/}
-            <div
-                className="HomeScreenImage"
-                style={{ height: setImageHeight() }}
-            >
+            <div className="HomeScreenImage">
                 <div className="HomeScreenText">
                     <p className="HeaderDescText">
                         Metal Engraving Services
-                        <br></br>
+                        <br />
                         DESCRIPTION OF BUSINESS
-                        <br></br>
+                        <br />
                         Based in Delano California
                     </p>
                 </div>
