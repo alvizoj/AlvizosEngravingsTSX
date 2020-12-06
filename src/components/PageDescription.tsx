@@ -6,9 +6,9 @@ export default function PageDescription(pageName: string) {
         <div className="BusinessDescription">
             <p className="HeaderDescText">
                 {PageDescriptions[pageName].pLine1}
-                <br></br>
+                <br />
                 {PageDescriptions[pageName].pLine2}
-                <br></br>
+                <br />
                 {PageDescriptions[pageName].pLine3}
             </p>
         </div>
@@ -20,11 +20,11 @@ export default function PageDescription(pageName: string) {
 
 Used to display PageDescription object on appropriate page based on key.
  - ID is a homepage string
- - Key is PD interface
-     - PD interface = varying # of strings populating HeaderDescText paragraph class
+ - Key is IPageDescription interface
+     - IPageDescription interface = varying # of strings populating HeaderDescText paragraph class
 
  */
-interface PD {
+interface IPageDescription {
     pLine1: string;
     pLine2?: string;
     pLine3?: string;
@@ -33,7 +33,7 @@ interface PD {
 }
 
 // Creating Dictionary
-let PageDescriptions: { [homePage: string]: PD } = {
+let PageDescriptions: { [homePage: string]: IPageDescription } = {
     Home: {
         pLine1: "Metal Engraving Services",
         pLine2: "DESCRIPTION OF BUSINESS",

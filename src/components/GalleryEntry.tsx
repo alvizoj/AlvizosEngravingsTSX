@@ -1,11 +1,11 @@
 import React from "react";
 
-interface GalleryEntryProps {
+interface IGalleryEntry {
     imageSrc: string;
     description: string;
     onClick?: () => {};
 }
-export default function GalleryEntry(props: GalleryEntryProps) {
+export default function GalleryEntry(props: IGalleryEntry) {
     let { imageSrc, description, onClick } = props;
     return (
         <section>

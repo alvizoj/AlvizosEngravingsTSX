@@ -5,7 +5,7 @@ import "../CSS/StyledLink.css";
 // Wrap component in div of whatever class I want link to be in
 // See: Gallery.tsx
 
-interface LinkProps {
+interface ILinkProps {
     buttonText: string;
     toPage: string;
     paddingBottom: string;
@@ -15,7 +15,7 @@ interface LinkProps {
     borderColor?: string;
 }
 
-export default function StyledLink(props: LinkProps) {
+export default function StyledLink(props: ILinkProps) {
     let {
         buttonText,
         toPage,
