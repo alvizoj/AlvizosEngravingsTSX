@@ -76,7 +76,7 @@ Text Classes
         #fab500 51%,
         #fbdf93 100%
     );
-    background-clip: text;
+    /*background-clip: text;*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Quicksand", sans-serif;
@@ -157,13 +157,21 @@ HomeScreen Image
     justify-content: center;
     align-items: center;
     height: calc(100vh - 65px);
+}
 
+.HomeScreenImage p {
+    display: none;
 }
 
 .HomeScreenText {
     text-align: center;
 }
 
+@media only screen and (min-width: 600px) {
+    .HomeScreenImage p {
+        display: block;
+    }
+}
 
 /* min-width: 1000px BEFORE */
 @media only screen and (min-width: 700px) {
