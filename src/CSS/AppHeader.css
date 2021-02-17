@@ -78,8 +78,9 @@ Media Queries
     }
 
     .topnav.responsive {
-        position: relative;
         display: grid;
+        overflow: hidden;
+        align-items: center;
     }
 
     .topnav .Flex {
