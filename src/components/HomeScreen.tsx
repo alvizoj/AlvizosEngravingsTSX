@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../CSS/HomeScreen.css";
+import EmailForm from "./EmailForm";
 // import { Link } from "react-router-dom";
 // import GalleryEntry from "./GalleryEntry";
 // import PageDescription from "./PageDescription";
@@ -40,15 +41,17 @@ export default function HomeScreen() {
                     <h4>Lorem ipsum lorem ipsum lorem ipsum lorem</h4>
                 </section>
 
-                {/*<StyledLink*/}
-                {/*    buttonText="See my Work"*/}
-                {/*    toPage="/Gallery"*/}
-                {/*    paddingBottom="1rem"*/}
-                {/*    backgroundColor="darkslateblue"*/}
-                {/*    textColor="black"*/}
-                {/*    fontSize="120%"*/}
-                {/*    borderColor={DARKSLATEBLUE}*/}
-                {/*/>*/}
+            <EmailForm />
+
+            {/*<StyledLink*/}
+            {/*    buttonText="See my Work"*/}
+            {/*    toPage="/Gallery"*/}
+            {/*    paddingBottom="1rem"*/}
+            {/*    backgroundColor="darkslateblue"*/}
+            {/*    textColor="black"*/}
+            {/*    fontSize="120%"*/}
+            {/*    borderColor={DARKSLATEBLUE}*/}
+            {/*/>*/}
 
                 {/*<Link to="/gallery">*/}
                 {/*    <section className="ContactInfo">*/}
