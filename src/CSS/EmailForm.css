@@ -3,9 +3,14 @@
     background-color: darkgray;
     padding: 20px;
     width: fit-content;
-    display: flex;
+    margin: auto auto 1.5rem auto;
 }
 
-.form {
-    margin: auto;
+/* General input fields for form class */
+.form input {
+    display: block;
+}
+/* Applies to just the 'submit' type within input element in form class */
+.form input[type="submit"] {
+    margin: 0 auto;
 }
