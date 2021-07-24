@@ -12,6 +12,7 @@ export default function EmailForm() {
             >
                 <input type="text" name="name" placeholder="Your name" />
                 <input type="email" name="_replyto" placeholder="Your email" />
+                <input type="text" name="message" placeholder="Message" />
                 <input type="submit" value="Send" />
             </form>
         </div>
