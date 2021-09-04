@@ -3,7 +3,7 @@ import "../CSS/AppHeader.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import HamburgerIcon from "./HamburgerIcon";
-import { HOME, GALLERY } from "../globals/Paths";
+import { HOME, GALLERY, CONTACT } from "../globals/Paths";
 
 export default function AppHeader() {
     //Use location.pathname for active buttons.
@@ -37,6 +37,14 @@ export default function AppHeader() {
                     className={path === HOME ? "activeButton" : ""}
                 >
                     Home
+                </Link>
+
+                <Link
+                    id="contactButton"
+                    to={CONTACT}
+                    className={path === CONTACT ? "activeButton" : ""}
+                >
+                    Contact
                 </Link>
 
                 <Link

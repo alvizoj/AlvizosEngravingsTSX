@@ -8,3 +8,4 @@ export const DropboxEngravingPhoto: string =
 
 export const HOME: string = "/home";
 export const GALLERY: string = "/gallery";
+export const CONTACT: string = "/contact";

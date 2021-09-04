@@ -10,7 +10,9 @@
 .form input {
     display: block;
 }
-/* Applies to just the 'submit' type within input element in form class */
+/* Applies to just the 'submit' type within input element in form class
+    and centers it
+*/
 .form input[type="submit"] {
     margin: 0 auto;
 }

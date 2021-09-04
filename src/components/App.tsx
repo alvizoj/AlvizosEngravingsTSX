@@ -6,9 +6,10 @@ import HomeScreen from "./HomeScreen";
 import AppHeader from "./AppHeader";
 import Footer from "./Footer";
 import Gallery from "./Gallery";
+import ContactScreen from "./ContactScreen";
 import PageNotFound from "./PageNotFound";
 import ScrollToTop from "./ScrollToTop";
-import { HOME, GALLERY } from "../globals/Paths";
+import { HOME, GALLERY, CONTACT } from "../globals/Paths";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                     <Switch>
                         <Route component={HomeScreen} exact path={HOME} />
                         <Route component={Gallery} exact path={GALLERY} />
+                        <Route component={ContactScreen} exact path={CONTACT} />
 
                         <Redirect exact from="/" to={HOME} />
                         <Route path="*" component={PageNotFound} />
